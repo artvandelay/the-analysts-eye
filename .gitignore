@@ -1,0 +1,19 @@
+# Secrets
+.env
+.env.*
+
+# Scratch / tooling
+.firecrawl/
+
+# Large media not part of the release
+podcast/
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.log
+.vscode/
+.idea/
+
+# Node (none committed, but guard anyway)
+node_modules/
