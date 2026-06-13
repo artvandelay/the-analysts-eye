@@ -714,6 +714,37 @@ body {
   max-width: 64ch;
 }
 
+.ae-learn {
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: #4a4840;
+  margin: 0 0 1.25rem;
+  max-width: 58ch;
+}
+
+.ae-credits {
+  margin: 1.75rem 0 0;
+  padding-top: 1.1rem;
+  border-top: 1px solid #d8d4c7;
+  font-size: 0.78rem;
+  line-height: 1.55;
+  color: #6b6960;
+  max-width: 64ch;
+}
+
+.ae-credits__line {
+  margin: 0 0 0.45rem;
+}
+
+.ae-credits__link {
+  color: #7a4a2e;
+  text-decoration: underline;
+}
+
+.ae-credits__link:hover {
+  color: #5a3520;
+}
+
 /* ===== Episode chrome ===== */
 .ae-index {
   font-size: 0.66rem;

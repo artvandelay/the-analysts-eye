@@ -93,6 +93,13 @@ function renderHub(root) {
   );
   header.appendChild(statement);
 
+  const learn = el(
+    'p',
+    'ae-learn',
+    'In about an hour you will run Heuer\u2019s own experiments on yourself \u2014 across perception, memory, evidence, causation, probability, and hindsight \u2014 and collect a pocket toolkit of moves that still work once the lesson is over.',
+  );
+  header.appendChild(learn);
+
   const status = el('div', 'ae-status');
   status.appendChild(
     el(
@@ -154,6 +161,34 @@ function renderHub(root) {
       'All 20 episodes are playable. Each one links to its chapter in Heuer — the episode is the hook; the book is the depth.',
     ),
   );
+
+  const credits = el('div', 'ae-credits');
+
+  const source = el('p', 'ae-credits__line');
+  source.append('Source: Richards J. Heuer Jr., ');
+  source.appendChild(el('em', null, 'Psychology of Intelligence Analysis'));
+  source.append(
+    ' (Center for the Study of Intelligence, CIA, 1999) — a public-domain U.S. Government work. This is an independent educational adaptation and is not endorsed by or affiliated with the CIA.',
+  );
+  credits.appendChild(source);
+
+  const inspiration = el('p', 'ae-credits__line');
+  inspiration.append('Built as an explorable explanation, in the spirit of ');
+  const ncase = el('a', 'ae-credits__link', 'Nicky Case');
+  ncase.href = 'https://ncase.me/';
+  ncase.target = '_blank';
+  ncase.rel = 'noopener noreferrer';
+  inspiration.appendChild(ncase);
+  inspiration.append('. Open source — ');
+  const repo = el('a', 'ae-credits__link', 'view on GitHub');
+  repo.href = 'https://github.com/artvandelay/the-analysts-eye';
+  repo.target = '_blank';
+  repo.rel = 'noopener noreferrer';
+  inspiration.appendChild(repo);
+  inspiration.append('.');
+  credits.appendChild(inspiration);
+
+  wrap.appendChild(credits);
 
   root.appendChild(wrap);
 }
