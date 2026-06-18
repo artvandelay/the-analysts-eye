@@ -14,7 +14,7 @@ export default {
     {
       type: 'choice',
       phase: 'COMMIT',
-      prompt: 'Which one will actually move your decision more?',
+      prompt: 'You have read the Consumer Reports numbers. You also heard the lemon story. Which one is pulling your decision right now?',
       options: [
         { id: 'stats', label: 'The statistics across thousands of owners' },
         { id: 'story', label: "The stranger's lemon story" },
@@ -27,8 +27,8 @@ export default {
       type: 'reveal',
       phase: 'REVEAL',
       label: 'THE RESULT',
-      correctText: 'You predicted the bias. The evidence says the vivid story wins.',
-      wrongText: 'The evidence says otherwise. The vivid story wins.',
+      correctText: 'You felt the pull. The evidence says the vivid story wins — even when you know better.',
+      wrongText: 'You picked {choice}. The vivid story still wins — that is the trap.',
       body:
         'Logically, the anecdote merely "increase[s] by one the sample on which the Consumer Reports statistics were based." Nisbett and Ross call it the "man-who" syndrome: "But I know a man who smoked three packs of cigarettes a day and lived to be ninety-nine."\n\nAmong physicians, smoking tracked vividness of exposure: radiologists who examine lung x-rays daily had the lowest smoking rate. "The probability that a physician continued to smoke was directly related to the distance of the physician\'s specialty from the lungs."',
       cta: 'NAME THE MECHANISM →',

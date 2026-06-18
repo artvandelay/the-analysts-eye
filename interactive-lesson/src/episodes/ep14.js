@@ -6,9 +6,9 @@ export default {
       type: 'prose',
       phase: 'PROVOKE',
       label: 'THE FILE',
-      lead: 'Two CIA officers assess the same question.',
+      lead: 'You and a colleague assess the same question.',
       body:
-        'The risk that an insider is betraying the service. One of them personally knew Aldrich Ames. The other has never known a traitor.\n\nSame institution. Same evidence base. Different lived experience.',
+        'The risk that an insider is betraying the service. You personally knew Aldrich Ames. Your colleague never has.\n\nSame institution. Same evidence base. Different lived experience.',
       cta: 'WHO RATES IT HIGHER →',
     },
     {
@@ -16,19 +16,19 @@ export default {
       phase: 'COMMIT',
       prompt: 'Who rates the risk higher?',
       options: [
-        { id: 'knew', label: 'The one who knew Ames' },
-        { id: 'never', label: 'The one who never knew a traitor' },
-        { id: 'same', label: 'No difference; both have the same evidence' },
+        { id: 'you', label: 'You — you knew Ames' },
+        { id: 'colleague', label: 'Your colleague' },
+        { id: 'same', label: 'No difference; same evidence' },
       ],
       lockCta: 'LOCK YOUR ANSWER →',
-      correctId: 'knew',
+      correctId: 'you',
     },
     {
       type: 'reveal',
       phase: 'REVEAL',
       label: 'THE RESULT',
-      correctText: 'You predicted the availability pull. The officer who knew Ames rates it higher.',
-      wrongText: 'The officer who knew Ames rates it higher — even when the evidence base is the same.',
+      correctText: 'You predicted the pull on yourself. Officers who knew Ames rate it higher.',
+      wrongText: 'You locked in {choice}. Officers who knew Ames still rate it higher — even when the evidence base is the same.',
       body:
         'People judge probability by "the ease with which they can imagine relevant instances of the event and the number or frequency of such events that they can easily remember." One smoker whose father died of lung cancer perceives greater risk, "even though one more case of lung cancer is statistically insignificant when weighing such risk."\n\nHeuer: "Although this often works well, people are frequently led astray when the ease with which things come to mind is influenced by factors unrelated to their probability."',
       cta: 'NAME THE MECHANISM →',

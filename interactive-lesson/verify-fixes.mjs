@@ -66,5 +66,14 @@ if (totalMin < 80 || totalMin > 100) {
 const engine = readFileSync(join(root, 'src/engine.js'), 'utf8');
 if (!engine.includes('episodeHasPhaseRegression')) fail('engine missing stepper fallback');
 
+// Part III briefing episodes should trap the learner, not quiz about "subjects"
+for (const id of ['ep07', 'ep10']) {
+  const mod = (await import(`./src/episodes/${id}.js`)).default;
+  const blob = JSON.stringify(mod.steps);
+  if (/who were the test subjects|Subjects judge which suicide notes|subjects' beliefs/i.test(blob)) {
+    fail(`${id} still uses third-person quiz framing`);
+  }
+}
+
 console.log(JSON.stringify({ pass: failures.length === 0, failures, sectionNums: EPISODES.map((e) => e.num), part2Titles: p2.map((e) => `§${e.num} ${e.title}`) }, null, 2));
 process.exit(failures.length ? 1 : 0);

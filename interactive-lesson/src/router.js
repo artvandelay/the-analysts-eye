@@ -130,7 +130,7 @@ function renderHub(root) {
   });
 
   const toolkit = el('div', CLASS.toolkit);
-  toolkit.appendChild(el('h3', 'ae-toolkit__title', 'Your toolkit'));
+  toolkit.appendChild(el('h3', 'ae-toolkit__title', 'Collected moves'));
   const tools = getTools();
   if (tools.length === 0) {
     toolkit.appendChild(

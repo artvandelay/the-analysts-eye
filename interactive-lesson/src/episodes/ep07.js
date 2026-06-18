@@ -9,26 +9,29 @@ export default {
       lead: 'You judge how far away a thing is partly by how sharp it looks.',
       body:
         'The sharper the outline, the closer the object. Most of the time this rule of thumb serves you well, and you never notice you are using it.\n\nBut it carries a built-in, systematic error: in poor visibility you overestimate distance, and in unusually good visibility you underestimate it. The shortcut that usually works fails in a predictable direction. The same is true of the shortcuts behind your judgments.',
-      cta: 'WHO GOT TESTED →',
+      cta: 'THE MEMO →',
     },
     {
       type: 'choice',
       phase: 'COMMIT',
-      prompt: 'The experiments that mapped these mental errors — who were the test subjects?',
+      prompt:
+        'You are about to sign a memo line: "Most of this bias research uses college volunteers — useful background, not operational for expert judgment." What do you do?',
       options: [
-        { id: 'students', label: 'Mostly undergraduates' },
-        { id: 'experts', label: 'Physicians, stock market analysts, horserace handicappers, chess masters, research directors' },
-        { id: 'public', label: 'Random members of the public' },
+        { id: 'send', label: 'Sign it — lab studies are not our tradecraft' },
+        { id: 'hedge', label: 'Sign it with a footnote caveat' },
+        { id: 'kill', label: 'Strike it — the cited experiments used experts on realistic tasks' },
       ],
-      lockCta: 'LOCK YOUR ANSWER →',
-      correctId: 'experts',
+      lockCta: 'LOCK YOUR CALL →',
+      correctId: 'kill',
     },
     {
       type: 'reveal',
       phase: 'REVEAL',
       label: 'THE RESULT',
-      correctText: 'You guessed it. These errors were mapped in experts working their own trade.',
-      wrongText: 'Most people assume students. The record says otherwise.',
+      correctText:
+        'You blocked the dismissal. These errors were mapped in experts working their own trade — not just undergraduates in a lab.',
+      wrongText:
+        'You were about to file the whole catalog as lab trivia. Most people assume students. The record says otherwise.',
       body:
         'In most of the cited experiments the subjects were experts working their own trade — physicians, stock market analysts, horserace handicappers, chess masters, research directors, and professional psychologists, not undergraduates — and the tasks were usually realistic. Heuer personally re-ran a number of the simpler experiments with military officers at the Naval Postgraduate School. The research tradition runs back to Tversky and Kahneman, "Judgment under Uncertainty" (1974).\n\nOne caveat before you file this: experiments show group tendencies. They are not verdicts on any one individual.',
       cta: 'NAME THE MECHANISM →',

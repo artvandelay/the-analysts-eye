@@ -4,13 +4,13 @@ An interactive field course in thinking, after Richards J. Heuer Jr.'s *Psycholo
 
 A book can teach you *about* your blind spots. It cannot make you feel one close. **The Analyst's Eye** catches you in a cognitive bias first — then names the mechanism and hands you one reusable move that survives the lesson.
 
-> You cannot be talked out of a cognitive bias. Heuer knew it. So every episode makes you commit a judgment first, shows you where it broke, names the mechanism, and leaves you with one reusable move.
+> You cannot be talked out of a cognitive bias. Heuer knew it. So nearly every episode makes you commit a judgment first, shows you where it broke, names the mechanism, and leaves you with one reusable move.
 
 ## Why it works this way
 
 Heuer's central, inconvenient finding is that **awareness of a bias does not switch it off** — "the error remains compelling even when one is fully aware of its nature." Reading about anchoring does not stop you anchoring.
 
-So this course never just *tells*. Every episode runs the same five-beat loop:
+So this course never just *tells*. Most episodes run the same five-beat loop (§02 names the framework; §20 recaps your toolkit):
 
 ```
 PROVOKE  →  COMMIT  →  REVEAL  →  NAME  →  TOOL

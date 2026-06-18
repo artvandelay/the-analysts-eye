@@ -6,15 +6,15 @@ export default {
       type: 'prose',
       phase: 'PROVOKE',
       label: 'THE FILE',
-      lead: 'Subjects judge which suicide notes are real and which are fictitious.',
+      lead: 'You are judging which suicide notes are real and which are fake.',
       body:
-        'They get scored feedback as they go. What they do not know: the feedback is random. One group is told they are doing far better than average. The other is told they are doing far worse.\n\nThen the experimenters debrief everyone fully. The scores were preordained, unrelated to performance.',
+        'After each note you get scored feedback. What you do not know: the scores are random. You are told you are doing far better than average.\n\nThen the experimenter debriefs you fully. The scores were preordained, unrelated to your performance.',
       cta: 'AFTER THE DEBRIEF →',
     },
     {
       type: 'choice',
       phase: 'COMMIT',
-      prompt: 'After that full debriefing, what happened to subjects\' beliefs about how good they actually are at this task?',
+      prompt: 'After that full debriefing, what happened to your belief about how good you are at this task?',
       options: [
         { id: 'reset', label: 'Beliefs snapped back to neutral' },
         { id: 'partial', label: 'Beliefs partly corrected' },
@@ -27,8 +27,8 @@ export default {
       type: 'reveal',
       phase: 'REVEAL',
       label: 'THE RESULT',
-      correctText: 'You predicted the persistence. The impression survived the debrief.',
-      wrongText: 'The impression survived the debrief. Most people expect a reset.',
+      correctText: 'You predicted the persistence. Your false confidence survived the debrief.',
+      wrongText: 'Your false confidence survived the debrief. Most people expect a reset.',
       body:
         'Ross, Lepper, and Hubbard (1975): erroneous impressions persisted after full debriefing — and the same perseverance showed up among observers of the experiment. One subject credited her "success" to an empathetic personality and insights from a novelist who committed suicide — and kept that story after learning the score was fake.\n\nHeuer: "Impressions tend to persist even after the evidence that created those impressions has been fully discredited." Colloquially: "once information rings a bell, the bell cannot be unrung."',
       cta: 'NAME THE MECHANISM →',
