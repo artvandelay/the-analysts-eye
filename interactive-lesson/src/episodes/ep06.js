@@ -27,15 +27,14 @@ export default {
         { id: 'foreign', label: 'A foreign-policy announcement is being staged' },
         { id: 'routine', label: 'Routine security theater' },
       ],
-      correctId: 'routine',
       lockCta: 'LOCK THE ASSESSMENT →',
     },
     {
       type: 'reveal',
       phase: 'REVEAL',
       label: 'THE UNFAIR PART',
-      correctText: 'You chose routine security theater. That may be right, but the point is not whether you guessed the hidden answer.',
-      wrongText: 'You chose {choice}. That may be wrong, but the point is not the miss.',
+      correctText: 'You locked in {choice}. With three ambiguous scraps, the mind does not wait for certainty.',
+      wrongText: 'You locked in {choice}. With three ambiguous scraps, the mind does not wait for certainty.',
       body:
         'With three ambiguous scraps, the mind does not wait for certainty. It imports a strategy.\n\nIf you built a story from the local sequence, you used situational logic. If you matched it to a known regime pattern, you used theory. If it reminded you of a past crisis, you used comparison. If you waited for the pile to "speak," you were still letting an implicit model decide which scraps sounded loud.',
       cta: 'SHOW THE SEARCHLIGHTS →',

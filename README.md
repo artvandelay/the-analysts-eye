@@ -30,10 +30,10 @@ You read a case, **commit a judgment** (lock an answer, allocate cases, mark a m
 | **IV — Conclusions** | Your toolkit + Heuer's closing checklist |
 
 Highlights:
-- **§18 Argue against everything** — a live 3×3 Analysis of Competing Hypotheses matrix you fill and score against Heuer's worked Iraq example.
-- **§19 Break your own frame** — the nine-dots puzzle, rendered and solved on-screen.
-- **§09 The dog that didn't bark** — you allocate 100 stalled cars across a fault tree, then learn three branches were hidden from you.
-- **§11 You invent the cause** — you pick where to move your family during the London Blitz, then meet Feller's finding that the bombing was statistically random.
+- **§09 Argue against everything** — a live 3×3 Analysis of Competing Hypotheses matrix you fill and score against Heuer's worked Iraq example.
+- **§07 Break your own frame** — the nine-dots puzzle, rendered and solved on-screen.
+- **§12 The dog that didn't bark** — you allocate 100 stalled cars across a fault tree, then learn three branches were hidden from you.
+- **§14 You invent the cause** — you pick where to move your family during the London Blitz, then meet Feller's finding that the bombing was statistically random.
 
 ## Run it locally
 

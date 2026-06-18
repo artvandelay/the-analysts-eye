@@ -58,8 +58,27 @@ function phasesFor(episode) {
   return PHASE_ORDER.filter((p) => set.has(p));
 }
 
-function renderStepper(parent, episode, activePhase) {
+function episodeHasPhaseRegression(episode) {
+  let maxIdx = -1;
+  for (const step of episode.steps) {
+    const idx = PHASE_ORDER.indexOf(step.phase);
+    if (idx < 0) continue;
+    if (idx < maxIdx) return true;
+    if (idx > maxIdx) maxIdx = idx;
+  }
+  return false;
+}
+
+function renderStepper(parent, episode, activePhase, stepIndex) {
   if (episode.stepper === false) return;
+  if (episodeHasPhaseRegression(episode)) {
+    const stepper = el('div', CLASS.stepper);
+    stepper.appendChild(
+      el('span', `${CLASS.phase} ${CLASS.phaseActive}`, `STEP ${stepIndex + 1} · ${activePhase}`),
+    );
+    parent.appendChild(stepper);
+    return;
+  }
   const phases = phasesFor(episode);
   if (phases.length < 2) return;
   const stepper = el('div', CLASS.stepper);
@@ -559,7 +578,7 @@ export function renderEpisode(host, episode, { chapter, onComplete }) {
     wrap.appendChild(head);
 
     const step = episode.steps[stepIndex];
-    renderStepper(wrap, episode, step.phase);
+    renderStepper(wrap, episode, step.phase, stepIndex);
 
     const key = `${stepIndex}:${step.type}`;
     if (key !== activeKey) {

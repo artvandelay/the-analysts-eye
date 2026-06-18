@@ -8,7 +8,7 @@ export default {
       label: 'THE FILE',
       lead: 'A quick estimation task.',
       body:
-        'Start from 10 percent and adjust.\n\nWhat percentage of United Nations member countries are located in Africa?',
+        'What percentage of United Nations member countries are located in Africa?\n\nLock an estimate before you read on.',
       cta: 'LOCK YOUR ESTIMATE →',
     },
     {
@@ -28,9 +28,9 @@ export default {
       type: 'prose',
       phase: 'REVEAL',
       label: 'THE RESULT',
-      lead: 'You started at 10 and landed on {answer:est}.',
+      lead: 'You landed on {answer:est}.',
       body:
-        'In Tversky and Kahneman\'s classroom exercise, half the students started from 10 percent and averaged 25 percent. Half started from 65 percent and averaged 45 percent. The arbitrary starting number dragged both groups.\n\nHeuer: "the starting point serves as an anchor or drag that reduces the amount of adjustment, so the final estimate remains closer to the starting point than it ought to be."',
+        'In Tversky and Kahneman\'s classroom exercise, half the students were told to start from 10 percent and averaged 25 percent. Half started from 65 percent and averaged 45 percent. The arbitrary starting number dragged both groups.\n\nHeuer: "the starting point serves as an anchor or drag that reduces the amount of adjustment, so the final estimate remains closer to the starting point than it ought to be."',
       cta: 'NAME THE MECHANISM →',
     },
     {

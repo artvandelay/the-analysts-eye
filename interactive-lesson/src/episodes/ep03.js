@@ -53,7 +53,7 @@ export default {
       phase: 'TOOL',
       lead: 'Form impressions late, and hold them loosely.',
       body:
-        'Delay commitment while a picture is still forming, and when you must commit, keep a live note of what would make you drop it. That "what would change my mind" list is the seed of the method in Episode 18.',
+        'Delay commitment while a picture is still forming, and when you must commit, keep a live note of what would make you drop it. That "what would change my mind" list is the seed of the competing-hypotheses method in §09.',
       toolItem: 'Form impressions late, and hold them loosely',
       completeCta: 'MARK COMPLETE →',
     },
