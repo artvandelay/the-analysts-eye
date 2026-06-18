@@ -24,8 +24,8 @@ You read a case, **commit a judgment** (lock an answer, allocate cases, mark a m
 
 | Part | Episodes |
 | --- | --- |
-| **I — Our Mental Machinery** | Perception, thinking about thinking, first-glance lock-in, memory |
-| **II — Tools for Thinking** | Need for information, strategies, structuring, Analysis of Competing Hypotheses, keeping an open mind |
+| **I — Our Mental Machinery** | Perception hook (Ch.2), thinking about thinking (Ch.1), first-glance lock-in, memory |
+| **II — Tools for Thinking** | Strategies, need for information, open mind, structuring, Analysis of Competing Hypotheses |
 | **III — Cognitive Biases** | Biases as machinery, vivid-beats-true, the dog that didn't bark, persistence of discredited beliefs, inventing causes, situation-vs-person, anchoring, availability, "probably", hindsight |
 | **IV — Conclusions** | Your toolkit + Heuer's closing checklist |
 

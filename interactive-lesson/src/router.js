@@ -96,7 +96,7 @@ function renderHub(root) {
   const learn = el(
     'p',
     'ae-learn',
-    'In about an hour you will run Heuer\u2019s own experiments on yourself \u2014 across perception, memory, evidence, causation, probability, and hindsight \u2014 and collect a pocket toolkit of moves that still work once the lesson is over.',
+    'In about 90 minutes you will run Heuer\u2019s own experiments on yourself \u2014 across perception, memory, evidence, causation, probability, and hindsight \u2014 and collect a pocket toolkit of moves that still work once the lesson is over.',
   );
   header.appendChild(learn);
 

@@ -49,7 +49,20 @@ if (provoke?.body?.includes('Start from 10 percent')) fail('ep13 PROVOKE telegra
 const ep05 = (await import('./src/episodes/ep05.js')).default;
 if (JSON.stringify(ep05).includes('"detail"')) fail('ep05 still has scale detail hints');
 
-// engine stepper fallback
+// ep08 provoke should not ask the commit question early
+const ep08 = (await import('./src/episodes/ep08.js')).default;
+const ep08provoke = ep08.steps.find((s) => s.phase === 'PROVOKE');
+if (ep08provoke?.body?.includes('Which one will actually move')) {
+  fail('ep08 PROVOKE telegraphs the commit question');
+}
+
+// hub duration claim (~90 min vs "about an hour")
+let totalMin = 0;
+for (const ep of EPISODES) totalMin += parseInt(ep.est, 10) || 0;
+if (totalMin < 80 || totalMin > 100) {
+  fail(`episode est sum is ${totalMin} min — update hub duration copy if this changes`);
+}
+
 const engine = readFileSync(join(root, 'src/engine.js'), 'utf8');
 if (!engine.includes('episodeHasPhaseRegression')) fail('engine missing stepper fallback');
 

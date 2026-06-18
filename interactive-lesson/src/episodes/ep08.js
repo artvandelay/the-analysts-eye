@@ -8,8 +8,8 @@ export default {
       label: 'THE FILE',
       lead: 'You are buying a car.',
       body:
-        'You have Consumer Reports repair statistics across thousands of owners. Then you overhear a stranger complaining that his Volvo turned out to be a lemon.\n\nBoth pieces of information sit on the table. One is aggregate data. One is vivid, concrete, and personal. Which one will actually move your decision?',
-      cta: 'LOCK YOUR GUESS →',
+        'You have Consumer Reports repair statistics across thousands of owners. Then you overhear a stranger complaining that his Volvo turned out to be a lemon.\n\nBoth pieces sit on the table — aggregate data and a vivid, personal story.',
+      cta: 'FACE THE CHOICE →',
     },
     {
       type: 'choice',

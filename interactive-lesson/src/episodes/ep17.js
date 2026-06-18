@@ -50,7 +50,7 @@ export default {
       phase: 'TOOL',
       lead: 'Draw the problem before you decide inside it.',
       body:
-        'For a serious judgment, first list the components and the relationships you think matter. Then inspect one part at a time while the whole remains visible. This creates the audit trail needed for the competing-hypotheses matrix in the next method episode.',
+        'For a serious judgment, first list the components and the relationships you think matter. Then inspect one part at a time while the whole remains visible. This creates the audit trail needed for the competing-hypotheses matrix in §09.',
       toolItem: 'Decompose and externalize: get the problem out of working memory',
       completeCta: 'MARK COMPLETE →',
     },
