@@ -89,7 +89,7 @@ function renderHub(root) {
   redaction.addEventListener('click', () => redaction.classList.add('ae-redaction--open'));
   statement.appendChild(redaction);
   statement.append(
-    ' out of a cognitive bias. Heuer knew it. So every episode below makes you commit a judgment first, shows you where it broke, names the mechanism, and leaves you with one reusable move.',
+    ' out of a cognitive bias. Heuer knew it. So nearly every episode below makes you commit a judgment first, shows you where it broke, names the mechanism, and leaves you with one reusable move.',
   );
   header.appendChild(statement);
 
