@@ -16,9 +16,9 @@ export default {
       phase: 'COMMIT',
       prompt: 'After that full debriefing, what happened to your belief about how good you are at this task?',
       options: [
-        { id: 'reset', label: 'Beliefs snapped back to neutral' },
-        { id: 'partial', label: 'Beliefs partly corrected' },
-        { id: 'persisted', label: 'The false impression survived essentially intact' },
+        { id: 'reset', label: 'Much lower confidence in my performance' },
+        { id: 'partial', label: 'Somewhat lower confidence in my performance' },
+        { id: 'persisted', label: 'About the same confidence as before the debrief' },
       ],
       lockCta: 'LOCK YOUR ANSWER →',
       correctId: 'persisted',

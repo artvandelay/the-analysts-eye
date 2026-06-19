@@ -17,9 +17,9 @@ export default {
       prompt:
         'You are about to sign a memo line: "Most of this bias research uses college volunteers — useful background, not operational for expert judgment." What do you do?',
       options: [
-        { id: 'send', label: 'Sign it — lab studies are not our tradecraft' },
-        { id: 'hedge', label: 'Sign it with a footnote caveat' },
-        { id: 'kill', label: 'Strike it — the cited experiments used experts on realistic tasks' },
+        { id: 'send', label: 'Sign as written' },
+        { id: 'hedge', label: 'Sign with a footnote limiting it to lab settings' },
+        { id: 'kill', label: 'Strike it and request a sourced rewrite' },
       ],
       lockCta: 'LOCK YOUR CALL →',
       correctId: 'kill',

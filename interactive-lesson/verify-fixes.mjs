@@ -75,5 +75,25 @@ for (const id of ['ep07', 'ep10']) {
   }
 }
 
+// commit options must not telegraph the reveal
+const ep07commit = (await import('./src/episodes/ep07.js')).default.steps.find(
+  (s) => s.phase === 'COMMIT' && s.type === 'choice',
+);
+const ep07opts = ep07commit?.options?.map((o) => o.label).join(' ') ?? '';
+if (/experts on realistic|undergraduates|not our tradecraft/i.test(ep07opts)) {
+  fail('ep07 COMMIT options telegraph the expert-subject reveal');
+}
+
+const ep10commit = (await import('./src/episodes/ep10.js')).default.steps.find(
+  (s) => s.phase === 'COMMIT' && s.type === 'choice',
+);
+const ep10opts = ep10commit?.options?.map((o) => o.label).join(' ') ?? '';
+if (/false impression|essentially intact/i.test(ep10opts)) {
+  fail('ep10 COMMIT options telegraph persistence of discredited beliefs');
+}
+if (/Beliefs snapped|Beliefs partly/i.test(ep10opts)) {
+  fail('ep10 COMMIT options use asymmetric belief-change framing');
+}
+
 console.log(JSON.stringify({ pass: failures.length === 0, failures, sectionNums: EPISODES.map((e) => e.num), part2Titles: p2.map((e) => `§${e.num} ${e.title}`) }, null, 2));
 process.exit(failures.length ? 1 : 0);

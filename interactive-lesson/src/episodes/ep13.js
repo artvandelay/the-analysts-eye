@@ -8,8 +8,8 @@ export default {
       label: 'THE FILE',
       lead: 'A quick estimation task.',
       body:
-        'What percentage of United Nations member countries are located in Africa?\n\nLock an estimate before you read on.',
-      cta: 'LOCK YOUR ESTIMATE →',
+        'What percentage of United Nations member countries are located in Africa?\n\nCommit an estimate before you read on.',
+      cta: 'MAKE YOUR ESTIMATE →',
     },
     {
       type: 'scale',
